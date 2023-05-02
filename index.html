@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <!-- <div id="navbar">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+    </div> -->
+    <div class="bg-image"></div>
+    <main id="main">
+        <div id="desc-wrapper">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you using us, let see what we can improve</p>
+        </div>
+        <div id="form-wrapper">
+            <form action="" id="survey-form">
+                <div id="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <span class="clue">*</span><br>
+                    <input type="text" id="name" class="form-control" name="name" placeholder="Enter your name" required><br><br>
+                </div>
+                <div id="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <span class="clue">*</span><br>
+                    <input type="email" id="email" class="form-control" name="email" placeholder="Enter your email" required><br><br>
+                </div>
+                <div id="form-group">
+                    <label for="age" id="number-label">Age</label>
+                    <span class="clue">(optional)</span><br>
+                    <input type="number" id="number" class="form-control" name="age" min="1" max="99" placeholder="Age" required ><br><br>
+                </div>
+                <div id="form-group">
+                    <label for="role" id="option-label">Current Role</label><br>
+                    <select name="role" id="dropdown" class="form-control" required>
+                        <option disable selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br><br>
+                </div>
+                <div id="form-group">
+                    <label for="user-recommend" id="recommend-label">Do yo recommend to others?</label><br>
+                        <label>
+                            <input name = "user-recommend" type="radio" value="definitely" class="input-radio" checked>
+                            Definitely
+                        </label><br>
+                        <label>
+                            <input name = "user-recommend" type="radio" value="maybe" class="input-radio">
+                            maybe
+                        </label><br>
+                        <label>
+                            <input name = "user-recommend" type="radio" value="not-sure" class="input-radio">
+                            Not Sure
+                        </label><br>
+                    <br>
+                </div>
+                <div id="form-group">
+                    <label for="user-improve" id="improve-label">What you want to improve</label><br>
+                        <label>
+                            <input name = "user-improve" type="checkbox" value="front-end" class="input-checkbox">
+                            Front-End Projects
+                        </label><br>
+                        <label>
+                            <input name = "user-recommend" type="checkbox" value="Back-end" class="input-checkbox">
+                            Back-end Projects
+                        </label><br>
+                        <label>
+                            <input name = "user-recommend" type="checkbox" value="data-visual" class="input-checkbox">
+                            Data Visualization
+                        </label><br>
+                    <br>
+                </div>
+                <div id="form-group">
+                    <label for="comment" id="comment-label">Any comments?</label><br>
+                    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+                </div><br>
+                <div id="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                      </button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
